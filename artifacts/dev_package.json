@@ -1,0 +1,82 @@
+{
+	"id": "e6c870c9-9dc5-ee11-85f9-0022489e2e3e",
+	"createdAt": "2024-02-07T09:46:38.526Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"git": {
+		"remote": "https://github.com/neptune-software-marketplace/neptunesoftware-dxp-abb-generatedPDFSendEmail"
+	},
+	"name": "neptunesoftware-dxp-abb-generatedPDFSendEmail",
+	"description": "A building block that enables users to send emails with PDF attachment",
+	"ver": "24.3.6.1024",
+	"enableCICD": true,
+	"apps": [
+		{
+			"id": "06f7d1d7-9dc5-ee11-85f9-0022489e2e3e",
+			"application": "generatedpdfsendemail",
+			"title": "",
+			"description": "Generate PDF and send it as an attachment in an email",
+			"package": {
+				"id": "E6C870C9-9DC5-EE11-85F9-0022489E2E3E"
+			}
+		}
+	],
+	"api": [
+		{
+			"id": "5097f523-b0c5-ee11-85f9-0022489e2e3e",
+			"name": "sendEmailWithGeneratedPDF",
+			"description": null,
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [],
+	"jsclass": [
+		{
+			"id": "38623ba1-abc5-ee11-85f9-0022489e2e3e",
+			"name": "sendEmailWithPDFattachment",
+			"description": "Script that sends an email with a PDF attachment"
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "28f1516d-abc5-ee11-85f9-0022489e2e3e",
+			"name": "EmailScripts",
+			"description": "Project that contains a script to send an email with a PDF attachment"
+		}
+	],
+	"theme": [],
+	"pdf": [
+		{
+			"id": "300562b7-a8c5-ee11-85f9-0022489e2e3e",
+			"application": "purchorder_pdf",
+			"description": ""
+		}
+	],
+	"rulesengine": [],
+	"reports": [],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [],
+	"category": [],
+	"launchpad": [],
+	"certificates": [],
+	"role": [],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [
+		{
+			"id": "0fafd90f-afc5-ee11-85f9-0022489e2e3e",
+			"name": "sendEmailWithPDFAttachment",
+			"description": "An Email with a PDF attachment"
+		}
+	],
+	"department": [],
+	"script_scheduler": [],
+	"wf_definition": [],
+	"connector": [],
+	"events": [],
+	"code_snippets": [],
+	"wf_determination": [],
+	"wf_taskaction": []
+}

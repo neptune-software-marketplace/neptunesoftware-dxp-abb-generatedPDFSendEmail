@@ -1,0 +1,9 @@
+{
+	"id": "28f1516d-abc5-ee11-85f9-0022489e2e3e",
+	"createdAt": "2024-02-07T11:24:16.930Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"name": "EmailScripts",
+	"description": "Project that contains a script to send an email with a PDF attachment",
+	"ver": "24.2.7.1124",
+	"package": "e6c870c9-9dc5-ee11-85f9-0022489e2e3e"
+}

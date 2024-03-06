@@ -1,0 +1,1168 @@
+{
+	"id": "06f7d1d7-9dc5-ee11-85f9-0022489e2e3e",
+	"createdAt": "2024-02-07T09:47:05.510Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"objects": [
+		{
+			"fieldNo": "99067e28-0e66-4788-cae7-ad85bf994f10",
+			"fieldName": "oApp",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"customComponent": false,
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "fce40407-80ce-43a6-9f73-eb2e1f1dec99",
+					"fieldName": "oPageGeneratePDF",
+					"fieldParent": "99067e28-0e66-4788-cae7-ad85bf994f10",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "Generate PDF Data for Email Attachment",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "6bc56d98-e685-4709-fd41-4baecba56033",
+							"fieldName": "oSimpleFormHeader",
+							"fieldParent": "fce40407-80ce-43a6-9f73-eb2e1f1dec99",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Generic Object",
+							"bindingType": "u",
+							"bindingSource": "P9",
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": [
+								{
+									"fieldNo": "8c65a3df-4b0f-4b0d-c74a-68652e454015",
+									"fieldName": "LabelPurchOrderHeader",
+									"fieldParent": "6bc56d98-e685-4709-fd41-4baecba56033",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Purchasing Document Number",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "77f09aad-6923-4b16-ebae-d03e3c972453",
+									"fieldName": "TextPurchOrderHeader",
+									"fieldParent": "6bc56d98-e685-4709-fd41-4baecba56033",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"bindingType": "h",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/purchOrder}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "4cb9b4db-faef-4ca5-b229-2f1d04fb0c44",
+									"fieldName": "LabelCompanyCodeHeader",
+									"fieldParent": "6bc56d98-e685-4709-fd41-4baecba56033",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Company Code",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "26ed734b-02b8-46b7-97e8-060108b69b42",
+									"fieldName": "TextCompanyCodeHeader",
+									"fieldParent": "6bc56d98-e685-4709-fd41-4baecba56033",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"customComponent": false,
+									"bindingType": "h",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{/companyCode}",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+							"fieldName": "oTablePurchDocumentItems",
+							"fieldParent": "fce40407-80ce-43a6-9f73-eb2e1f1dec99",
+							"fieldType": "sap.m.Table",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Generic Array",
+							"bindingType": "h",
+							"bindingSource": "P9",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "showNoData",
+									"grouping": "Properties",
+									"value": "false",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "1bf409cb-f6dc-42f3-ecf9-a4d44e1688e0",
+									"fieldName": "coloTablePurchDocumentItemsmatDocument",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "57bac7c5-2ecd-46e8-d822-e954b7fe5b05",
+											"fieldName": "colHoTablePurchDocumentItemsmatDocument",
+											"fieldParent": "1bf409cb-f6dc-42f3-ecf9-a4d44e1688e0",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Material Document",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "85541d9c-57cf-4ef0-89f1-cda99e832bfa",
+									"fieldName": "coloTablePurchDocumentItemspurchOrder",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "4e93ea6d-e0d1-4670-dc2b-74efd58921a7",
+											"fieldName": "colHoTablePurchDocumentItemspurchOrder",
+											"fieldParent": "85541d9c-57cf-4ef0-89f1-cda99e832bfa",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Purchasing Document",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "2560e8fe-2022-49ed-a04d-23d4d82f4679",
+									"fieldName": "coloTablePurchDocumentItemspurchOrderItem",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "9cf940f0-1516-4a4c-8cf2-11928962e928",
+											"fieldName": "colHoTablePurchDocumentItemspurchOrderItem",
+											"fieldParent": "2560e8fe-2022-49ed-a04d-23d4d82f4679",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Item",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "364ffaf5-aa6e-4993-d9d2-16d4dbe2d634",
+									"fieldName": "coloTablePurchDocumentItemsmaterial",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "20a5e89e-6951-4e15-ed54-9e77558dc776",
+											"fieldName": "colHoTablePurchDocumentItemsmaterial",
+											"fieldParent": "364ffaf5-aa6e-4993-d9d2-16d4dbe2d634",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Material",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "1b699935-1402-47e2-a8e1-b3825188ecea",
+									"fieldName": "coloTablePurchDocumentItemsmaterialDescription",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "41ee7dbd-14bc-4141-e52a-9289667c87c8",
+											"fieldName": "colHoTablePurchDocumentItemsmaterialDescription",
+											"fieldParent": "1b699935-1402-47e2-a8e1-b3825188ecea",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Material Description",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "b616616e-68f6-4568-a4e7-debdce335728",
+									"fieldName": "coloTablePurchDocumentItemsquantity",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "01e8e669-f24c-4c74-c131-df043c7ffae7",
+											"fieldName": "colHoTablePurchDocumentItemsquantity",
+											"fieldParent": "b616616e-68f6-4568-a4e7-debdce335728",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Quantity",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "cda0297f-e668-422a-bf8d-326aed428efb",
+									"fieldName": "coloTablePurchDocumentItemsamount",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "a22db0a3-5a15-4b6f-c12f-0348e1dad279",
+											"fieldName": "colHoTablePurchDocumentItemsamount",
+											"fieldParent": "cda0297f-e668-422a-bf8d-326aed428efb",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Amount",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "cee1ab56-6e64-4fb2-83df-bf2ab868060b",
+									"fieldName": "coloTablePurchDocumentItemscurrency",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.Column",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "af5d1113-3823-46b7-ebc2-0aaa94909dcd",
+											"fieldName": "colHoTablePurchDocumentItemscurrency",
+											"fieldParent": "cee1ab56-6e64-4fb2-83df-bf2ab868060b",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Currency",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+									"fieldName": "colItemoTablePurchDocumentItems",
+									"fieldParent": "cf40850d-a6ec-42e8-a104-4118e8993ade",
+									"fieldType": "sap.m.ColumnListItem",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": [
+										{
+											"fieldNo": "d77e713d-0521-4527-cd8f-31fad4a66dcd",
+											"fieldName": "txtoTablePurchDocumentItemsmatDocument",
+											"fieldParent": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{matDocument}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "066114b9-f426-4414-bdad-34475ff91034",
+											"fieldName": "txtoTablePurchDocumentItemspurchOrder",
+											"fieldParent": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{purchOrder}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "80b639f1-f18f-4159-ebbd-a47629cf811d",
+											"fieldName": "txtoTablePurchDocumentItemspurchOrderItem",
+											"fieldParent": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{purchOrderItem}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "8dce2b49-4a13-4f4c-f4ca-3cc6630bf734",
+											"fieldName": "txtoTablePurchDocumentItemsmaterial",
+											"fieldParent": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{material}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "fa3cf1f7-a363-4595-f581-295013527e23",
+											"fieldName": "txtoTablePurchDocumentItemsmaterialDescription",
+											"fieldParent": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{materialDescription}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "382cd75f-d094-4a4c-c6ac-845e9df9505b",
+											"fieldName": "txtoTablePurchDocumentItemsquantity",
+											"fieldParent": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{quantity}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "b812806b-5e7e-4909-fd6c-389bc0bc4d0f",
+											"fieldName": "txtoTablePurchDocumentItemsamount",
+											"fieldParent": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{amount}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "c7dbbbc4-5ccd-4a79-ff42-c25c1f9a2e75",
+											"fieldName": "txtoTablePurchDocumentItemscurrency",
+											"fieldParent": "db652f61-2bd4-48c9-8ecb-f0876bd774c4",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{currency}",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "3e3f1054-47fa-4abd-9463-31f81917a028",
+							"fieldName": "oBarFooter",
+							"fieldParent": "fce40407-80ce-43a6-9f73-eb2e1f1dec99",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setFooter",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "2a5d6966-cc02-4cb3-f5b7-4af752f27b8c",
+									"fieldName": "Right",
+									"fieldParent": "3e3f1054-47fa-4abd-9463-31f81917a028",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "d7b1e4d5-0372-4e34-c855-ca9326a261b0",
+											"fieldName": "oButtonGeneratePDF",
+											"fieldParent": "2a5d6966-cc02-4cb3-f5b7-4af752f27b8c",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Accept",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Generate PDF",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "Anonymous Function",
+													"script": "file://event/sap.m.Button/oButtonGeneratePDF/press.js",
+													"language": "javascript",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "79cf642b-5ce8-45f2-bf2e-47815e3d7651",
+					"fieldName": "oPageViewPDF",
+					"fieldParent": "99067e28-0e66-4788-cae7-ad85bf994f10",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "View Generated PDF",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "showNavButton",
+							"grouping": "Properties",
+							"value": "true",
+							"script": "",
+							"translation": []
+						},
+						{
+							"attribute": "navButtonPress",
+							"grouping": "Events",
+							"value": "oApp.back();",
+							"script": "oApp.back();",
+							"translation": []
+						},
+						{
+							"attribute": "titleAlignment",
+							"grouping": "Properties",
+							"value": "Center",
+							"script": "",
+							"translation": []
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "fb7423b6-2917-4521-c5de-1946c9daffcc",
+							"fieldName": "oPDFViewer",
+							"fieldParent": "79cf642b-5ce8-45f2-bf2e-47815e3d7651",
+							"fieldType": "sap.m.PDFViewer",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "7c0a38ff-6829-4fab-81e3-abb2419105d7",
+							"fieldName": "oBarFooterPDF",
+							"fieldParent": "79cf642b-5ce8-45f2-bf2e-47815e3d7651",
+							"fieldType": "sap.m.Bar",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "position",
+									"grouping": "Parent",
+									"value": "setFooter",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "6ec0eaa3-5618-47da-b808-01f1b379f10a",
+									"fieldName": "Right",
+									"fieldParent": "7c0a38ff-6829-4fab-81e3-abb2419105d7",
+									"fieldType": "neptune.BarContent",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "position",
+											"grouping": "Parent",
+											"value": "ContentRight",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "fcd8f0f5-5f84-4c4f-fb81-7c6909d5e18c",
+											"fieldName": "oButtonSendEmail",
+											"fieldParent": "6ec0eaa3-5618-47da-b808-01f1b379f10a",
+											"fieldType": "sap.m.Button",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Accept",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Send Email with PDF",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "press",
+													"grouping": "Events",
+													"value": "oDialogSendEmail.open();",
+													"script": "oDialogSendEmail.open();",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "5e53a77b-921e-46f3-cec5-cf919ceb41b8",
+					"fieldName": "Dialogs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "bd977dbf-e816-4581-c83b-a24553231031",
+							"fieldName": "oButtonAcceptDialogSendEmail",
+							"fieldParent": "5e53a77b-921e-46f3-cec5-cf919ceb41b8",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Accept",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Send Email",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/sap.m.Button/oButtonAcceptDialogSendEmail/press.js",
+									"language": "javascript",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "6b47f361-416a-4da3-ed2d-7c43a9e10390",
+							"fieldName": "oButtonCloseDialogSendEmail",
+							"fieldParent": "5e53a77b-921e-46f3-cec5-cf919ceb41b8",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Negative",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Close",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "oDialogSendEmail.close();",
+									"script": "oDialogSendEmail.close();",
+									"translation": []
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "27baec24-5aa8-4adb-c851-b522a0ef1960",
+							"fieldName": "oDialogSendEmail",
+							"fieldParent": "5e53a77b-921e-46f3-cec5-cf919ceb41b8",
+							"fieldType": "sap.m.Dialog",
+							"script": "",
+							"customComponent": false,
+							"bindingValue": "Generic Object",
+							"bindingType": "u",
+							"bindingSource": "P9",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "title",
+									"grouping": "Properties",
+									"value": "Send Email with PDF",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "endButton",
+									"grouping": "Associations",
+									"value": "oButtonCloseDialogSendEmail",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "beginButton",
+									"grouping": "Associations",
+									"value": "oButtonAcceptDialogSendEmail",
+									"script": "",
+									"translation": []
+								},
+								{
+									"attribute": "titleAlignment",
+									"grouping": "Properties",
+									"value": "Center",
+									"script": "",
+									"translation": []
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "dfd4dd10-ebb9-4b78-fd06-117175281f6c",
+									"fieldName": "oSimpleFormDialogSendEmail",
+									"fieldParent": "27baec24-5aa8-4adb-c851-b522a0ef1960",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"customComponent": false,
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true",
+											"script": "",
+											"translation": []
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "21f8b8f9-11ab-4cb7-e91f-e2ba6fe13a8e",
+											"fieldName": "LabelEmail",
+											"fieldParent": "dfd4dd10-ebb9-4b78-fd06-117175281f6c",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"customComponent": false,
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Email",
+													"script": "",
+													"translation": []
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "45f0cf6e-94fe-4869-a3fd-deac9c73a507",
+											"fieldName": "InputEmail",
+											"fieldParent": "dfd4dd10-ebb9-4b78-fd06-117175281f6c",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"customComponent": false,
+											"bindingType": "h",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{/email}",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "placeholder",
+													"grouping": "Properties",
+													"value": "Please provide an email to send the PDF attachment...",
+													"script": "",
+													"translation": []
+												},
+												{
+													"attribute": "liveChange",
+													"grouping": "Events",
+													"value": "InputEmail.setValueState();",
+													"script": "InputEmail.setValueState();",
+													"translation": []
+												}
+											],
+											"data": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"fieldNo": "ad35625f-54f0-489a-8ac6-119f4a8fc340",
+					"fieldName": "Scripts",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "9e159c38-e75b-4e33-e08c-663edafaf551",
+							"fieldName": "GlobalVariables",
+							"fieldParent": "ad35625f-54f0-489a-8ac6-119f4a8fc340",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/GlobalVariables.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "4fc3a570-b031-4e54-840f-6402d139e430",
+							"fieldName": "Functions",
+							"fieldParent": "ad35625f-54f0-489a-8ac6-119f4a8fc340",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/Functions.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						},
+						{
+							"fieldNo": "bc283eb2-011c-41fb-d975-8c5ffadee463",
+							"fieldName": "Init",
+							"fieldParent": "ad35625f-54f0-489a-8ac6-119f4a8fc340",
+							"fieldType": "neptune.Script",
+							"script": "file://script/neptune.Script/Scripts/Init.js",
+							"customComponent": false,
+							"request": [],
+							"response": [],
+							"attributes": [],
+							"data": []
+						}
+					]
+				},
+				{
+					"fieldNo": "ba5c7225-373c-4b58-dae4-93f6c385b4d2",
+					"fieldName": "APIs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.folder",
+					"script": "",
+					"customComponent": false,
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": [
+						{
+							"fieldNo": "76615379-89df-42b0-aba2-afa6b70bf1eb",
+							"fieldName": "RestAPISendEmail",
+							"fieldParent": "ba5c7225-373c-4b58-dae4-93f6c385b4d2",
+							"fieldType": "neptune.restapi",
+							"script": "",
+							"customComponent": false,
+							"restSource": "5097f523-b0c5-ee11-85f9-0022489e2e3e",
+							"restOperation": "fb9fcd88-a2fb-4b53-f9d7-ee91c822693d",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"attribute": "ajaxSuccess",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"script": "file://event/neptune.restapi/RestAPISendEmail/ajaxSuccess.js",
+									"language": "javascript",
+									"translation": []
+								},
+								{
+									"attribute": "ajaxError",
+									"grouping": "Events",
+									"value": "oApp.setBusy(false);",
+									"script": "oApp.setBusy(false);",
+									"translation": []
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"ver": "24.2.29.1130",
+	"application": "generatedpdfsendemail",
+	"title": "",
+	"description": "Generate PDF and send it as an attachment in an email",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "C",
+	"ui5_m": true,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_chart": false,
+	"ui5_theme": "sap_horizon",
+	"ui5_version": "",
+	"ui5_language": null,
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": null,
+	"header": "",
+	"manifest": "",
+	"globalScript": null,
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": null,
+	"printWidth": null,
+	"generateVersionOnActivation": false,
+	"activationHistoryCount": 0,
+	"apis": [
+		{
+			"id": "5097f523-b0c5-ee11-85f9-0022489e2e3e",
+			"name": "sendEmailWithGeneratedPDF",
+			"ver": "24.2.7.1158"
+		}
+	],
+	"package": "e6c870c9-9dc5-ee11-85f9-0022489e2e3e"
+}

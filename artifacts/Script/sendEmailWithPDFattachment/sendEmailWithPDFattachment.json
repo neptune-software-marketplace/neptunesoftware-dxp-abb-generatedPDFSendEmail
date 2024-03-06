@@ -1,0 +1,20 @@
+{
+	"id": "38623ba1-abc5-ee11-85f9-0022489e2e3e",
+	"createdAt": "2024-02-07T11:25:44.046Z",
+	"createdBy": "daniel.vieira@neptune-software.com",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [],
+	"apis": [],
+	"name": "sendEmailWithPDFattachment",
+	"ver": "24.2.29.1134",
+	"description": "Script that sends an email with a PDF attachment",
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"transpiledContent": null,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "28f1516d-abc5-ee11-85f9-0022489e2e3e",
+	"package": "e6c870c9-9dc5-ee11-85f9-0022489e2e3e"
+}
