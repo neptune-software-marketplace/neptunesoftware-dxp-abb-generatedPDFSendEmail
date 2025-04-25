@@ -727,7 +727,13 @@
 							"customComponent": false,
 							"request": [],
 							"response": [],
-							"attributes": [],
+							"attributes": [{
+								"attribute": "isTrustedSource",
+								"grouping": "Properties",
+								"value": "true",
+								"script": "",
+								"translation": []
+								}],
 							"data": []
 						},
 						{
